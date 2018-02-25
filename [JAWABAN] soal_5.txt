@@ -1,0 +1,19 @@
+Tuliskan 3 buah element yang terdiri dari
+
+a. 2 element input
+b. 1 element button
+
+Selanjutnya jika user melakukan action klik pada button tersebut, maka akan menampilkan popup dengan message inputan dari 2 element tersebut.
+
+Kode HTML :
+
+<input id="input1" type="text" placeholder="Masukkan inputan">
+<input id="input2" type="text" placeholder="Masukkan inputan">
+<button id="showBtn">Show input</button>
+
+JQuery : 
+    $(document).ready(function(){
+      $("#showBtn").click(function(){
+        alert("Input 1 : "+$("#input1").val()+" ; Input 2 : "+$("#input2").val());
+      });
+    });

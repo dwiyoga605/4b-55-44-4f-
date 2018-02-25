@@ -1,0 +1,21 @@
+Kode HTML :
+
+<input id="name" type="text" placeholder="nama lengkap">
+
+a. Tambahkan attribut "class" dengan value class "inputPhoneNumber" (javascript/JQuery)
+
+    $(document).ready(function(){
+      $("#name").addClass("inputPhoneNumber");
+    });
+
+b. Rubahlah value attribut type dari "text" ke "number" (javascript/JQuery)
+
+    $(document).ready(function(){
+      $("#name").prop('type','number');
+    });
+
+c. Tuliskan javaScript/JQuery untuk menghapus element input diatas
+
+    $(document).ready(function(){
+      $("#name").remove();
+    });
